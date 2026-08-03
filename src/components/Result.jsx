@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const Result = () => {
 
   const{userName,score} = useContext(UserContext);
-  let navigategir=useNavigate();
+  let navigate=useNavigate();
   return (
     <div>
 
