@@ -1,17 +1,21 @@
 import React, { useContext, useState } from 'react'
 import UserContext from './UserContext'
+import { useNavigate } from 'react-router-dom';
 
 const User = () => {
-    const{setPage,setUsername}=useContext(UserContext);
+    const{setUsername}=useContext(UserContext);
     const[name,setName]=useState("");
+
+   let navigate = useNavigate();
 
     function startQuiz(){
 
         if(name.trim()==""){
             return alert("Enter a valid Name")
         }
-       setPage("quiz");
-       setUsername(name)
+    //    setPage("quiz");
+    navigate("/quiz");
+       setUsername(name);
     }
   return (
     <div>

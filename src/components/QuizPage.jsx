@@ -1,15 +1,18 @@
 import React, { useContext, useState } from 'react'
 import UserContext from './UserContext'
 import questions from '../data/questions.json'
+import { useNavigate } from 'react-router-dom';
 
 
 const QuizPage = () => {
-    const{setScore,setPage,userName}=useContext(UserContext);
+    const{setScore,userName}=useContext(UserContext);
     const[currentQuestion,setCurrentQuestion]=useState(0);
      const [selectedAnswer, setSelectedAnswer] = useState("");
+     let navigate =useNavigate();
 
      function handlefinish(){
-setPage("result");
+// setPage("result");
+navigate("/result")
 
      }
      function handlenext(){
