@@ -70,7 +70,7 @@ if(selectedAnswer==''){
 
         {
 
-            currentQuestion==questions.length-1?
+            currentQuestion===questions.length-1?
             (<button onClick={handlefinish}>Finish</button>)
             :(<button onClick={handlenext}>next</button>)
         }
