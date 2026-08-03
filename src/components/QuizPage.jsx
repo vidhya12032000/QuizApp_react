@@ -12,6 +12,13 @@ const QuizPage = () => {
 
      function handlefinish(){
 // setPage("result");
+if(selectedAnswer==''){
+    return alert("Please Select an Option");
+}
+
+ if (selectedAnswer === questions[currentQuestion].answer) {
+      setScore((prev) => prev + 1);
+    }
 navigate("/result")
 
      }
@@ -44,8 +51,7 @@ if(selectedAnswer==''){
         {
             questions[currentQuestion].options.map((option,index)=>{
                 return(
-                    <div className="optionContainer"
-                     key={index+1} 
+                    <div key={index+1} 
                       onClick={()=>handleAnswer(option)}
                        className={
               selectedAnswer === option
