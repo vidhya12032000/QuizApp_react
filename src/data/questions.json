@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Which HTML tag is used to create a hyperlink?",
+    "options": [
+      "<a>",
+      "<link>",
+      "<href>",
+      "<url>"
+    ],
+    "answer": "<a>"
+  },
+  {
+    "question": "Which CSS property is used to change the text color?",
+    "options": [
+      "font-color",
+      "text-color",
+      "color",
+      "foreground-color"
+    ],
+    "answer": "color"
+  },
+  {
+    "question": "Which keyword is used to declare a variable in JavaScript?",
+    "options": [
+      "variable",
+      "let",
+      "define",
+      "declare"
+    ],
+    "answer": "let"
+  },
+  {
+    "question": "Which method is used to render a React component conditionally?",
+    "options": [
+      "if statement",
+      "map()",
+      "filter()",
+      "reduce()"
+    ],
+    "answer": "if statement"
+  },
+  {
+    "question": "Which keyword is used to create a class in Java?",
+    "options": [
+      "object",
+      "class",
+      "struct",
+      "define"
+    ],
+    "answer": "class"
+  }
+]
